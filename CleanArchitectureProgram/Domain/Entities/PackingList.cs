@@ -1,4 +1,6 @@
-﻿using CleanArchitecture.Domain.Exceptions;
+﻿using CleanArchitecture.Domain.Common;
+using CleanArchitecture.Domain.Events;
+using CleanArchitecture.Domain.Exceptions;
 using CleanArchitecture.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
@@ -8,20 +10,20 @@ using System.Threading.Tasks;
 
 namespace CleanArchitecture.Domain.Entities
 {
-    public class PackingList
+    public class PackingList : AggreateRoot<PackingListId>
     {
         public PackingListId Id { get; private set; }
-        public Localization Localization { get; private set; }
-        public PackingListName PackingName { get; private set; }
+
+        private Localization _localization;
+        private PackingListName _packingName;
 
         private readonly LinkedList<PackingItem> _items = new();
 
-        public PackingList(string name, Localization localization, Guid id, LinkedList<PackingItem> items)
+        internal PackingList(PackingListName PackingName, Localization localization, PackingListId id)
         {
-            PackingName = name;
-            Localization = localization;
             Id = id;
-            _items = items;
+            _packingName = PackingName;
+            _localization = localization;
         }
 
         public void AddItem(PackingItem item)
@@ -30,10 +32,47 @@ namespace CleanArchitecture.Domain.Entities
 
             if (alreadyExist)
             {
-                throw new PackingItemAlreadyExistException(PackingName.Value, item.Name);
+                throw new PackingItemAlreadyExistException(_packingName.Value, item.Name);
             }
 
             _items.AddLast(item);
+            AddEvent(new PackingItemAdded(this, item));
+        }
+
+        public void AddItems(IEnumerable<PackingItem> items)
+        {
+            foreach (var item in items)
+            {
+                AddItem(item);
+            }
+        }
+
+        public void PackItem(string itemName)
+        {
+            var item = GetItem(itemName);
+            var packedItem = item with { IsPacked = true };
+
+            _items.Find(item).Value = packedItem;
+            AddEvent(new PackingItemPacked(this, item));
+        }
+
+        public void RemoveItem(string itemName)
+        {
+            var item = GetItem(itemName);
+            _items.Remove(item);
+            AddEvent(new PackingItemRemoved(this, item));
+        }
+
+        private PackingItem GetItem(string itemName)
+        {
+            var item = _items.SingleOrDefault(q=>q.Name == itemName);
+
+            if(item is null)
+            {
+                throw new PackingItemNotFoundException(itemName);
+            }
+
+            return item;
         }
     }
 }

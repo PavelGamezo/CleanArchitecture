@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CleanArchitecture.Domain.ValueObjects
 {
-    public record Localization(string city, string country)
+    public record Localization(string City, string Country)
     {
         public static Localization Create(string value)
         {
@@ -16,7 +16,7 @@ namespace CleanArchitecture.Domain.ValueObjects
 
         public override string ToString()
         {
-            return $"{city}, {country}";
+            return $"{City}, {Country}";
         }
     }
 }

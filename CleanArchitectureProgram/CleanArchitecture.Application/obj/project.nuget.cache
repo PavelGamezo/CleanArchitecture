@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "M2IkYf0bOJ2dcyO3qXxgCg2uKN4tCSnnWnM4rNSAsrjpPEVJK7GEqW05z2LMQzzCAWhvSb7ePGl2oN3mTA22Cg==",
+  "dgSpecHash": "LupTMS7EekFcmQcv28fkM0fjWvmdZwVtfN7Xk4dYCca06LKeUIRufCwGt1hH2tqnEemXCKBnFieTG1BHGwDR4Q==",
   "success": true,
   "projectFilePath": "D:\\Программирование\\C#\\Clean Architecture\\Programs\\CleanArchitecture\\CleanArchitectureProgram\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.dependencymodel\\3.1.6\\microsoft.extensions.dependencymodel.3.1.6.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\scrutor\\3.3.0\\scrutor.3.3.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
+  ],
   "logs": []
 }
