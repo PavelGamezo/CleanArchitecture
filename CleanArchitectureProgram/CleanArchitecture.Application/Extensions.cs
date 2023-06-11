@@ -1,6 +1,8 @@
 ﻿using CleanArchitecture.Domain.Factories;
 using CleanArchitecture.Domain.Policies;
 using CleanArchitecture.Shared;
+using CleanArchitecture.Shared.Command;
+using CleanArchitecture.Shared.Queries;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -15,6 +17,7 @@ namespace CleanArchitecture.Application
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
             services.AddCommands();
+            services.AddQueries();
             services.AddSingleton<IPackingListFactory, PackingListFactory>();
 
             services.Scan(q => q.FromAssemblies(typeof(IPackingItemPolicy).Assembly)

@@ -1,5 +1,4 @@
 ﻿using CleanArchitecture.Common.Commands;
-using CleanArchitecture.Shared.Command;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -8,7 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanArchitecture.Shared
+namespace CleanArchitecture.Shared.Command
 {
     public static class Extensions
     {
@@ -18,7 +17,7 @@ namespace CleanArchitecture.Shared
 
             services.AddSingleton<ICommandDispatcher, InMemoryCommandDispatcher>();
             services.Scan(q => q.FromAssemblies(assembly)
-                .AddClasses(w=>w.AssignableTo(typeof(ICommandHandler<>)))
+                .AddClasses(w => w.AssignableTo(typeof(ICommandHandler<>)))
                 .AsImplementedInterfaces()
                 .WithScopedLifetime());
 
