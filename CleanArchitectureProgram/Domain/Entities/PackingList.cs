@@ -19,11 +19,21 @@ namespace CleanArchitecture.Domain.Entities
 
         private readonly LinkedList<PackingItem> _items = new();
 
-        internal PackingList(PackingListName PackingName, Localization localization, PackingListId id)
+        private PackingList(PackingListName PackingName, Localization localization, PackingListId id, LinkedList<PackingItem> items)
+            : this(id, localization, PackingName)
+        {
+            AddItems(items);
+        }
+
+        private PackingList()
+        {
+        }
+
+        internal PackingList(PackingListId id, Localization localization, PackingListName packingName)
         {
             Id = id;
-            _packingName = PackingName;
             _localization = localization;
+            _packingName = packingName;
         }
 
         public void AddItem(PackingItem item)

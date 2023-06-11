@@ -20,7 +20,7 @@ namespace CleanArchitecture.Domain.Factories
         }
 
         public PackingList Create(PackingListId id, PackingListName name, Localization localization)
-            => new(name, localization, id);
+            => new(id, localization, name);
 
         public PackingList CreateWithDefaultItems(PackingListId id, PackingListName name, TravelDays days, GenderEnum gender,
             Temperature temperature, Localization localization)
