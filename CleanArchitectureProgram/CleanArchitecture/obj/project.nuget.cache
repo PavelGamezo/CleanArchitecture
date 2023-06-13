@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/OtAAx0/icp+evAxrrhAsHu15DfMaySRDCUAnaAb2XUxD66D5ONU+9ELWRjTdubjNyRP2AM/T4gnhrAoeZhXxQ==",
+  "dgSpecHash": "3CY3+CGpM/ha78qIoM0+wh4niUjV0MN5wpfi3XTlIKgbDZ6HN0YpFxnBdgKFhuUOOv5uvrvENH8ZKDywBwmrVQ==",
   "success": true,
   "projectFilePath": "D:\\Программирование\\C#\\Clean Architecture\\Programs\\CleanArchitecture\\CleanArchitectureProgram\\CleanArchitecture\\CleanArchitecture.API.csproj",
   "expectedPackageFiles": [
