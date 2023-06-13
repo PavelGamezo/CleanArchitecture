@@ -1,6 +1,9 @@
-﻿using CleanArchitecture.Infrastucture.EF;
+﻿using CleanArchitecture.Application.Services;
+using CleanArchitecture.Infrastucture.EF;
 using CleanArchitecture.Infrastucture.EF.Options;
+using CleanArchitecture.Infrastucture.Services;
 using CleanArchitecture.Shared.Options;
+using CleanArchitecture.Shared.Queries;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -17,6 +20,9 @@ namespace CleanArchitecture.Infrastucture
             IConfiguration configuration)
         {
             services.AddSql(configuration);
+            services.AddQueries();
+            services.AddSingleton<IWeatherService, DumbWeatherService>();
+
             return services;
         }
     }

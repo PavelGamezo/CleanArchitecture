@@ -17,7 +17,6 @@ namespace CleanArchitecture.Application
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
             services.AddCommands();
-            services.AddQueries();
             services.AddSingleton<IPackingListFactory, PackingListFactory>();
 
             services.Scan(q => q.FromAssemblies(typeof(IPackingItemPolicy).Assembly)

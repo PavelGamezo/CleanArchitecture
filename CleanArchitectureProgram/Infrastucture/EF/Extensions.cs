@@ -1,5 +1,9 @@
-﻿using CleanArchitecture.Infrastucture.EF.Contexts;
+﻿using CleanArchitecture.Application.Services;
+using CleanArchitecture.Domain.Repositories;
+using CleanArchitecture.Infrastucture.EF.Contexts;
 using CleanArchitecture.Infrastucture.EF.Options;
+using CleanArchitecture.Infrastucture.EF.Repositories;
+using CleanArchitecture.Infrastucture.EF.Services;
 using CleanArchitecture.Shared.Options;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -16,6 +20,9 @@ namespace CleanArchitecture.Infrastucture.EF
     {
         public static IServiceCollection AddSql(this IServiceCollection services, IConfiguration configuration)
         {
+            services.AddScoped<IPackingListRepository, SqlPackingListRepository>();
+            services.AddScoped<IPackingListReadService, SqlPackingListReadService>();
+
             var sqlPptions = configuration.GetOptions<SqlOptions>("Sql");
 
             services.AddDbContext<ReadDbContext>(options =>

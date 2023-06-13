@@ -9,7 +9,6 @@ namespace CleanArchitecture.Application.Services
 {
     public interface IPackingListReadService
     {
-        Task<IEnumerable<PackingListDto>> SearchAsync(string searchPhrase);
         Task<bool> ExistsByName(string name);
     }
 }
