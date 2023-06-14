@@ -23,15 +23,15 @@ namespace CleanArchitecture.Infrastucture.EF
             services.AddScoped<IPackingListRepository, SqlPackingListRepository>();
             services.AddScoped<IPackingListReadService, SqlPackingListReadService>();
 
-            var sqlPptions = configuration.GetOptions<SqlOptions>("Sql");
+            var sqlOptions = configuration.GetOptions<SqlOptions>("Sql");
 
             services.AddDbContext<ReadDbContext>(options =>
             {
-                options.UseSqlServer(sqlPptions.ConnectionString);
+                options.UseSqlServer(sqlOptions.ConnectionString);
             });
             services.AddDbContext<WriteDbContext>(options =>
             {
-                options.UseSqlServer(sqlPptions.ConnectionString);
+                options.UseSqlServer(sqlOptions.ConnectionString);
             });
 
             return services;

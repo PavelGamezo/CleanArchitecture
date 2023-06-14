@@ -1,0 +1,14 @@
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Domain\bin\Debug\net6.0\CleanArchitecture.Domain.deps.json
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Domain\bin\Debug\net6.0\CleanArchitecture.Domain.dll
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Domain\bin\Debug\net6.0\CleanArchitecture.Domain.pdb
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Domain\obj\Debug\net6.0\CleanArchitecture.Domain.csproj.AssemblyReference.cache
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Domain\obj\Debug\net6.0\CleanArchitecture.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Domain\obj\Debug\net6.0\CleanArchitecture.Domain.AssemblyInfoInputs.cache
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Domain\obj\Debug\net6.0\CleanArchitecture.Domain.AssemblyInfo.cs
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Domain\obj\Debug\net6.0\CleanArchitecture.Domain.csproj.CoreCompileInputs.cache
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Domain\obj\Debug\net6.0\CleanArchitecture.Domain.dll
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Domain\obj\Debug\net6.0\refint\CleanArchitecture.Domain.dll
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Domain\obj\Debug\net6.0\CleanArchitecture.Domain.pdb
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Domain\obj\Debug\net6.0\ref\CleanArchitecture.Domain.dll
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Domain\bin\Debug\net6.0\CleanArchitecture.Domain.runtimeconfig.json
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Domain\obj\Debug\net6.0\CleanArchitecture.Domain.genruntimeconfig.cache

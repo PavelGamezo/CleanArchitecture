@@ -1,0 +1,17 @@
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Shared\bin\Debug\net6.0\CleanArchitecture.Shared.deps.json
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Shared\bin\Debug\net6.0\CleanArchitecture.Shared.dll
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Shared\bin\Debug\net6.0\CleanArchitecture.Shared.pdb
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Shared\bin\Debug\net6.0\CleanArchitecture.Common.dll
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Shared\bin\Debug\net6.0\CleanArchitecture.Common.pdb
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Shared\obj\Debug\net6.0\CleanArchitecture.Shared.csproj.AssemblyReference.cache
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Shared\obj\Debug\net6.0\CleanArchitecture.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Shared\obj\Debug\net6.0\CleanArchitecture.Shared.AssemblyInfoInputs.cache
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Shared\obj\Debug\net6.0\CleanArchitecture.Shared.AssemblyInfo.cs
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Shared\obj\Debug\net6.0\CleanArchitecture.Shared.csproj.CoreCompileInputs.cache
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Shared\obj\Debug\net6.0\CleanArchitecture.Shared.csproj.CopyComplete
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Shared\obj\Debug\net6.0\CleanArchitecture.Shared.dll
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Shared\obj\Debug\net6.0\refint\CleanArchitecture.Shared.dll
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Shared\obj\Debug\net6.0\CleanArchitecture.Shared.pdb
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Shared\obj\Debug\net6.0\ref\CleanArchitecture.Shared.dll
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Shared\bin\Debug\net6.0\CleanArchitecture.Shared.runtimeconfig.json
+D:\Программирование\C#\Clean Architecture\Programs\CleanArchitecture\CleanArchitectureProgram\Shared\obj\Debug\net6.0\CleanArchitecture.Shared.genruntimeconfig.cache
